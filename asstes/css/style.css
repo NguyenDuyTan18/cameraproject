@@ -17,7 +17,7 @@
     width: 100%;
 }
 
-.header-logo{
+.header-content_img--logo{
     max-height: 50px;
     text-align: center;
  }
@@ -42,7 +42,7 @@
     /* border-bottom: 1px solid rgba(0, 0, 0,0.15); ; */
 }
 
-.header-content-container{
+.header-content__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@
     margin-right: 20px;
 }
 
-.header-content-search{
+.header-content__container--search{
     margin-right: 70px;
     border: 1px solid ;
     display: flex;
@@ -59,33 +59,33 @@
     border-radius: 10px;
     background-color: #89898926;
 }
-.header-content-search:hover{
+.header-content__container--search:hover{
     background-color: #FFF;
 }
 
-.icon-search{
+.header-icon__i--search{
     font-size: 20px; 
     color: black;
 }
 
-a .icon_user{
+a .header-icon__i--user{
     font-size: 20px;
     font-weight: 500;
     color: black;
 }
 
-.icon_shopping-cart{
+.header-icon__i--shopping-cart{
     margin-left: 70px;
     font-size: 20px;
     color: black;
 }
 
-.icon_search:hover, .icon_user:hover, .icon_shopping-cart:hover{
+.header-icon__i--search:hover, .header-icon__i--user:hover, .header-icon__i--shopping-cart:hover{
     color:blue;
     cursor: pointer;
 }
 
-.header-content-container .header-content-search .header_search{
+.header-content__container .header-content__container--search .header-icon__input--search{
     padding: 5px 50px;
     height: 30px;
     border-style: none;
@@ -104,13 +104,13 @@ a .icon_user{
     margin-bottom: 20px;
 }
 
-.trangchu ,.camera ,.camera-accessory, .laptop,.laptop-accessory{
+.header-nav__div--trangchu ,.header-nav__div--camera ,.header-nav__div--camera-accessory, .header-nav__div--laptop,.header-nav__div--laptop-accessory{
     padding: 15px 5px;
     border-right: 1px solid rgba(0, 0, 0,0.15);
     border-left: 1px solid rgba(0, 0, 0,0.15);
 }
  
-.trangchu a ,.camera a,.camera-accessory a, .laptop a,.laptop-accessory a{
+.header-nav__div--trangchu a ,.header-nav__div--camera a,.header-nav__div--camera-accessory a, .header-nav__div--laptop a,.header-nav__div--laptop-accessory a{
     color: #FFF;
     text-decoration: none;
     font-weight: 600;
@@ -118,9 +118,10 @@ a .icon_user{
     font-size: 15px;
 }
 
-.trangchu:hover ,.camera:hover ,.camera-accessory:hover , .laptop:hover,.laptop-accessory:hover {
+.header-nav__div--trangchu:hover ,.header-nav__div--camera:hover ,.header-nav__div--camera-accessory:hover , .header-nav__div--laptop:hover,.header-nav__div--laptop-accessory:hover {
     background-color: gray;
     cursor: pointer;
+    color: black;
 }
 
 @keyframes tranlate{
@@ -137,40 +138,40 @@ a .icon_user{
 /* Footer */
 
 
-.footer_information{
+.footer-information{
     display: flex;
     justify-content: space-evenly;
 }
-.footer_information h4{
+.footer-information h4{
     padding: 20px 0;
 }
 
-.footer_information-category div, .footer_information-introduce div, .footer_information-help div, .footer_information-contact div, .footer_information-social div{
+.footer-information__div--category div, .footer-information__div--introduce div, .footer-information__div--help div, .footer-information__div--contact div, .footer-information__div--social div{
     margin-bottom: 8px;
     margin-top: 8px;
 }
 
-.footer_information-help .sub div, .footer_information-contact div{
+.footer-information__div--help .sub div, .footer-information__div--contact div{
     color: #707070;
 }
 
-.footer_information-contact a, .footer_information-social a{
+.footer-information__div--contact a, .footer-information__div--social a{
     font-weight: bolder;
     text-decoration: none;
     color: #707070;
 }
-.footer_information-social{
+.footer-information__div--social{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.footer_information-social .footer_information-icon{
+.footer-information__div--social .footer-information__div--icon{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.footer_information-icon span{
+.footer-information__div--icon span{
     border: 1px solid #4267b2;
     background-color:#4267b2;
     border-radius: 5px;
@@ -178,7 +179,7 @@ a .icon_user{
     color: #FFF;
 }
 
-.footer_information-social h3{
+.footer-information__div--social h3{
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -191,24 +192,25 @@ a .icon_user{
     padding: 6px;
 }
 
-.icon-youtube{
+.footer-icon__i--youtube{
     color: red;
     font-size: 30px;
+    padding: 6px;
 }
 
-.icon-facebook{
+.footer-icon__i--facebook{
     color: blue;
     font-size: 30px;
     padding: 6px;
 }
 
-.icon-instagram{
+.footer-icon__i--instagram{
     color: #da0e67;
     font-size: 30px;
     padding: 6px;
 }
 
-.footer_adress-pay{
+.footer-adress-pay{
     border-top: 1px solid rgba(0, 0, 0, 0.15);
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     display: flex;
@@ -216,35 +218,39 @@ a .icon_user{
     margin: 10px 0;
 }
 
-.footer_adress{
+.footer__div--adress{
     margin-top: 10px;
     margin-left: 50px;
 }
 
 
 
-.footer_adress div{
+.footer__div--adress div{
     padding: 6px 0;
 }
 
-.footer_adress div a{
+.footer__div--adress div a{
     text-decoration: none;
     color: blue;
 }
 
-.footer_pay{
+.footer__div--adress div a:hover{
+    color: grey;
+}
+
+.footer__div--pay{
     text-align: center;
     margin-top: 10px;
     margin-right: 50px;
 }
 
-.footer_pay h3{
+.footer__div--pay h3{
     margin-bottom: 10px;
     margin-top: 10px;
     font-weight: bolder;
 }
 
-.footer_pay a .img-pay{
+.footer__div--pay a .img-pay{
     width: 286px;
     height: 96px;
     display: block;
