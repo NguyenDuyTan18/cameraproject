@@ -18,7 +18,7 @@
 }
 
 .header-content_img--logo{
-    max-height: 50px;
+    max-height: 100px;
     text-align: center;
  }
 .banner{
@@ -99,7 +99,7 @@ a .header-icon__i--user{
     justify-content: center;
     align-items: center;
     height: 48px;
-    background-color: #0067b8;
+    background-color: rgba(231, 58,58 , 255);
     margin-top: 100px;
     margin-bottom: 20px;
 }
@@ -124,9 +124,6 @@ a .header-icon__i--user{
     color: black;
 }
 
-@keyframes tranlate{
-    
-}
 
 /* Header-navigation */
 
@@ -136,7 +133,10 @@ a .header-icon__i--user{
 }
 
 /* Footer */
-
+.footer{
+    background-color: #000;
+    color: grey;
+}
 
 .footer-information{
     display: flex;
@@ -146,25 +146,43 @@ a .header-icon__i--user{
     padding: 20px 0;
 }
 
+.footer-information__div--category h4, .footer-information__div--introduce h4,
+.footer-information__div--help h4, .footer-information__div--contact h4, footer h3{
+    color: #FFF !important;
+}
+
 .footer-information__div--category div, .footer-information__div--introduce div, .footer-information__div--help div, .footer-information__div--contact div, .footer-information__div--social div{
     margin-bottom: 8px;
     margin-top: 8px;
 }
 
+.footer-information__div--category .img-bocongthuong{
+    width:90%;
+    margin-top: 20px;
+}
+
 .footer-information__div--help .sub div, .footer-information__div--contact div{
-    color: #707070;
+    color: grey;
 }
 
 .footer-information__div--contact a, .footer-information__div--social a{
     font-weight: bolder;
     text-decoration: none;
-    color: #707070;
+    color: grey;
 }
 .footer-information__div--social{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.footer-information__div--social a .img-pay{
+    width: 286px;
+    height: 96px;
+    display: block;
+    padding: 15px 0;
+}
+
 .footer-information__div--social .footer-information__div--icon{
     display: flex;
     justify-content: space-evenly;
@@ -179,17 +197,23 @@ a .header-icon__i--user{
     color: #FFF;
 }
 
+.footer-information__div--icon span:hover{
+    cursor: pointer;
+    background-color: #FFF;
+    color: #000;
+}
+
 .footer-information__div--social h3{
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.footer-information__div--social a, .footer-information__div--social div:last-child{
+.footer-information__div--social a, #footer__div--one{
     color: red;
     font-size: 26px;
     font-weight: bolder;
     text-align: center;
-    padding: 6px;
+    /* padding: 6px; */
 }
 
 .footer-icon__i--youtube{
@@ -249,13 +273,4 @@ a .header-icon__i--user{
     margin-top: 10px;
     font-weight: bolder;
 }
-
-.footer__div--pay a .img-pay{
-    width: 286px;
-    height: 96px;
-    display: block;
-    padding: 15px 0;
-}
-
-
 /* Footer */
