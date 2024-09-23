@@ -184,7 +184,7 @@ a .header-icon__i--user{
     margin-top: 10px;
 }
 
-.footer_information-social a, .footer_information-social div:last-child{
+.footer-information__div--social a, .footer-information__div--social div:last-child{
     color: red;
     font-size: 26px;
     font-weight: bolder;
