@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7765121905.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./asstes/css/style.css">
-    <link rel="icon" href="./asstes/imgs/header-img/header-logo.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="icon" href="./assets/imgs/header-img/header-logo.png">
     <title>Camera Shop</title>
 </head>
 <body>
     <div class="root">
         <header class="header">
             <div class="header-content">
-                <img src="./asstes/imgs/header-img/header-logo1.png" alt="Logo-shop" class="header-content_img--logo">
+                <img src="./assets/imgs/header-img/header-logo1.png" alt="Logo-shop" class="header-content_img--logo">
                 <div class="header-content__container">
                     <div class="header-content__container--search">
                         <input type="text" class="header-icon__input--search" value="" placeholder="Search...">
@@ -30,7 +31,11 @@
                 <div class="header-nav__div--laptop-accessory"><a href=""><i class="fa-solid fa-microchip"></i> PHỤ KIỆN MÁY TÍNH <i class="fa-solid fa-chevron-down"></i></a></div> 
             </div>
         </header>
-        <div class="banner"></div>
+        <div class="banner">
+            <div class="banner__div--slide">
+                <img onclick="changeImage()" src="./assets/imgs/banner-img/banner--one.png" alt="banner1" id="banner-img">
+            </div>
+        </div>
         <div class="main"></div>
         <footer class="footer">
             <div class="footer-information">
@@ -38,7 +43,7 @@
                     <h4>DOANH MỤC KINH DOANH</h4>
                     <div>Máy ảnh</div>
                     <div>Phụ kiện máy ảnh</div>
-                    <a href="https://moit.gov.vn/"><img src="./asstes/imgs/footer-img/footer-pay-thongbao.png" alt="bo cong thuong" class="img-bocongthuong"></a>
+                    <a href="https://moit.gov.vn/"><img src="./assets/imgs/footer-img/footer-pay-thongbao.png" alt="bo cong thuong" class="img-bocongthuong"></a>
                     
                 </div>
                 <div class="footer-information__div--introduce">
@@ -77,23 +82,13 @@
                     <h3>TỔNG ĐÀI CSKH</h3>
                     <a href="#">0123456789</a>
                     <div id="footer__div--one">Trả Góp Online</div>
-                    <a href="https://bill.payoo.vn/"><img src="./asstes/imgs/footer-img/footer-pay.png" alt="anh thanh toan" class="img-pay"></a>
+                    <a href="https://bill.payoo.vn/"><img src="./assets/imgs/footer-img/footer-pay.png" alt="anh thanh toan" class="img-pay"></a>
                 </div>
             </div>
 
-            <!-- <div class="footer-adress-pay">
-                <div class="footer__div--adress">
-                    <div><strong>Chi nhánh HCM: </strong><a href="https://maps.app.goo.gl/RuJCHs1KqRp76haP7"> Trần Hưng Đạo, P. Nguyễn Thái Bình, Quận 1, TP. HCM. ĐT: 0123456789 - 0987654321</a></div>
-                    <div><strong>Chi nhánh HCM Phú Nhuận:</strong><a href="https://maps.app.goo.gl/C2werKf5aPtWbazZ8"> Trần Huy Liệu, Phường 11, Q.Phú Nhuận, TP. HCM. ĐT: 0123456789 - 0987654321</a></div>
-                    <div><strong>Chi nhánh Cần Thơ</strong><a href="https://maps.app.goo.gl/tbUAstNRareNVuiTA"> Hùng Vương, P. Thới Bình, Q.Ninh Kiều, TP. Cần Thơ. ĐT: 0123456789 - 0987654321</a></div>
-                    <div><strong>Chi nhánh Đà Nẵng:</strong><a href="https://maps.app.goo.gl/E5cMkCKuCJjxSTaY7"> Nguyễn Văn Linh, Q.Thanh Khê, TP. Đà Nẵng. ĐT: 0123456789 - 0987654321</a></div>
-                    <div><strong>Chi nhánh Vũng Tàu:</strong><a href="https://maps.app.goo.gl/NZKKhJGV3wMkMYPx5"> Lê Hồng Phong, P.4, TP. Vũng Tàu. ĐT: 0123456789 - 0987654321</a></div>
-                    <div><strong>Chi nhánh Hà Nội:</strong><a href="https://maps.app.goo.gl/QaZFYtCLG6EfPqDX9"> Thái Hà, Q.Đống Đa, TP. Hà Nội. ĐT: 0123456789 - 0987654321</a></div>
-                </div>
-
-                
-            </div> -->
         </footer>
     </div>
+    <script src="main.js"></script>
 </body>
+
 </html>
