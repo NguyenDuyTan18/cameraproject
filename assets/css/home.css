@@ -1,15 +1,136 @@
 .banner{
-    /* position: relative; */
     margin: 10px 0;
-}
-
-.banner__div--slide{
-    /* display: flex;
-    width: 100%;
-    transition: transform 0.5s ease-in-out; */
 }
 
 .banner__div--slide #banner-img{
     height: 305px;
-    max-width: 100%;
+    width: 100%;
+}
+/* end banner */
+
+/* begin main */
+.main{
+    width: 100%;
+}
+
+/* main-introduce--list */
+
+.main__list--introduce{
+   
+}
+
+.main-introduce__div--button .main-introduce__button--one{
+    height: 44px;
+    width: 105px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    margin-right: 5px;
+}
+
+.main-introduce__div--button .main-introduce__button--two{
+    height: 44px;
+    width: 105px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    margin-left: 5px;
+}
+
+.main-introduce__button--one p, .main-introduce__button--two p{
+    text-align: center;
+    line-height: 44px;
+    font-weight: 500;
+}
+
+.main-introduce__div--button .main-introduce__button--one:hover,
+.main-introduce__div--button .main-introduce__button--two:hover{
+    color: rgb(2, 117, 216);
+    cursor: pointer;
+}
+
+.main-introduce__div--content{
+   /* height: 80%;
+   width: 80%; */
+   overflow: hidden;
+}
+.main-introduce__div--button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-introduce__container{
+    position: relative;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 16px 0;
+    height: 348px; 
+    width: 900px;
+    overflow: hidden;
+}
+
+.main-introduce__item{
+}
+
+.main-introduce__item .item-img{
+    width: 100%;
+}
+/* main-introduce--list */
+
+
+/* main-picture--list */
+.main__list--picture{
+    padding-bottom: 40px;
+}
+.main-picture__container{
+   width: 100%;
+}
+
+.main-picture__list--one{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-picture__list--img{
+    height: 50%;
+    width: 30%;
+    margin: 4px 4px;
+}
+
+.main-picture__list--img .main-img{
+    width: 100%;
+    height: 340px;
+}
+
+.main-picture__list--img .main-img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.main-picture__list--two{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* main-picture--list */
+
+/* main-sub-content--list */
+.main__list--sub-content{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.main-content__container{
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+}
+
+.main-content__container h3{
+    padding: 6px 0 ;
+    margin-bottom: 10px;
+}
+
+.main-content__container p{
+    line-height: 1.6;
+    padding: 6px 0;
+    text-align: justify;
 }

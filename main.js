@@ -3,11 +3,13 @@
         let imgs = ["./assets/imgs/banner-img/banner--one.png", 
                     "./assets/imgs/banner-img/banner--two.png", 
                     "./assets/imgs/banner-img/banner--three.png", 
-                    "./assets/imgs/banner-img/banner--four.png"
+                    "./assets/imgs/banner-img/banner--four.png",
+                    "./assets/imgs/banner-img/banner--five.png",
+                    "./assets/imgs/banner-img/banner--six.png"
                 ];
         document.getElementById('banner-img').src = imgs[index__banner]
         index__banner++;
-        if(index__banner == 4){
+        if(index__banner == 6){
             index__banner = 0;
         }
     } 

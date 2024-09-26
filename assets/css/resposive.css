@@ -1,0 +1,63 @@
+
+@media screen and (max-width: 480px) {
+    .header {
+        width: 480px;
+    }
+
+    .header-content_img--logo{
+        width: 30%;
+     }
+
+    .header-content{
+        padding: 2px;
+        justify-content: start;
+    }
+
+    .header-content__container{
+        padding: 2px;
+        margin-right: 2px;
+    }
+
+    .header-content__container--search{
+        margin-right: 2px;
+        padding: 2px ;
+    }
+
+    .header-icon__i--shopping-cart{
+        margin-left: 2px;
+       
+    }
+
+    .header-content__container .header-content__container--search .header-icon__input--search{
+        padding: 0;
+        
+    } 
+    
+
+    .header .header-nav .header-nav__div--trangchu,
+    .header .header-nav .header-nav__div--camera,
+    .header .header-nav .header-nav__div--camera-accessory,
+    .header .header-nav .header-nav__div--laptop,
+    .header .header-nav .header-nav__div--laptop-accessory{
+        padding: 5px 5px;
+    }
+
+    /* main-picture */
+    .main-picture__list--one, .main-picture__list--two{
+        display: block;
+        
+    }
+    .main-picture__list--img{
+        margin: 4px 4px;
+        height: 50%;
+        width: 45%;
+    }
+    /* main-picture */
+}
+
+@media screen and (min-width: 481px) and (max-width: 789px) {
+    
+    .main-picture__container, .main-img{
+        width: 60%;
+    }
+}
