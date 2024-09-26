@@ -1,38 +1,6 @@
 
 @media screen and (max-width: 480px) {
-    .header {
-        width: 480px;
-    }
-
-    .header-content_img--logo{
-        width: 30%;
-     }
-
-    .header-content{
-        padding: 2px;
-        justify-content: start;
-    }
-
-    .header-content__container{
-        padding: 2px;
-        margin-right: 2px;
-    }
-
-    .header-content__container--search{
-        margin-right: 2px;
-        padding: 2px ;
-    }
-
-    .header-icon__i--shopping-cart{
-        margin-left: 2px;
-       
-    }
-
-    .header-content__container .header-content__container--search .header-icon__input--search{
-        padding: 0;
-        
-    } 
-    
+   
 
     .header .header-nav .header-nav__div--trangchu,
     .header .header-nav .header-nav__div--camera,
