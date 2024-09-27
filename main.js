@@ -15,6 +15,39 @@
     } 
     setInterval(changeImage,5000)
     // banner 
+    
+    // main--introduce
+    const prev = document.querySelector('.main-introduce--prev');
+    const next = document.querySelector('.main-introduce--next');
+    const container = document.querySelector('.main-introduce__container');
+    
+    let index__introduce = 0;
+    
+    function showSlide(index){
+        const totalcontainer = container.children.length;
+        console.log(totalcontainer)
+        if(index >= totalcontainer  ){
+            index__introduce = 0;
+        }
+        else if(index < 0){
+            index__introduce = totalcontainer - 1;
+        }
+        else {
+            index__introduce = index;
+        }
+        console.log(index__introduce)
+        const containerWidth = container.children[0].clientWidth
+        console.log(containerWidth);
+        container.style.transform = `translateX(${- index__introduce * containerWidth}px)`;
+    }
+    function moveSlide(step){
+        showSlide(index__introduce + step)
+    }
+    
+    
+    
+    // main--introduce
+
 
     
 
