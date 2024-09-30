@@ -1,14 +1,61 @@
 
-@media screen and (max-width: 480px) {
-   
-
-    .header .header-nav .header-nav__div--trangchu,
-    .header .header-nav .header-nav__div--camera,
-    .header .header-nav .header-nav__div--camera-accessory,
-    .header .header-nav .header-nav__div--laptop,
-    .header .header-nav .header-nav__div--laptop-accessory{
-        padding: 5px 5px;
+@media (max-width: 480px) {
+    .header{
+        width: 77%;
     }
+
+    .header-content_img--logo{
+        width: 70px;
+    }
+
+    .header .header-content{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .header .header-content, .header-content__container,
+    .header-content__container .header-content__container--search .header-icon__input--search  {
+        padding: 0;
+    }
+
+    .header-content__container--search{
+        margin-right: 2px;
+    }
+    .header-icon__i--shopping-cart{
+        margin-left: 2px;
+    }
+
+    /* header-nav */
+    .header-nav{
+        display: block;
+        overflow: hidden;
+        background-color: rgba(231, 58, 58, 255);
+    }
+
+    .header-nav > div{
+        display: block;
+        background-color: rgba(231, 58, 58, 255);
+        border-bottom: 1px solid grey;
+        border-top: 1px solid rgba(0, 0 , 0 , 0.05);
+    }
+
+    .menu-bar{
+        display: inline-block;
+        float: right;
+        border-bottom: 0px;
+        padding: 2px 5px;
+        line-height: 44px;
+        background-color: rgba(231, 58, 58, 255);
+        border-right: 0px solid rgba(0, 0, 0,0.15);
+    }
+    
+
+    /* header-nav */
+    /* banner */
+    .banner{
+        width: 77%;
+    }
+    /* banner */
 
     /* main-picture */
     .main-picture__list--one, .main-picture__list--two{

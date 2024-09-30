@@ -108,21 +108,27 @@ a .header-icon__i--user{
     margin-bottom: 20px;
 }
 
-.header-nav__div--trangchu ,.header-nav__div--camera ,.header-nav__div--camera-accessory, .header-nav__div--laptop,.header-nav__div--laptop-accessory{
+.menu-bar{
+    display: none;
+}
+
+.menu-bar ,.header-nav__div--trangchu ,.header-nav__div--camera ,.header-nav__div--camera-accessory, .header-nav__div--laptop,.header-nav__div--laptop-accessory{
     padding: 15px 5px;
+    list-style-type: none;
     border-right: 1px solid rgba(0, 0, 0,0.15);
     border-left: 1px solid rgba(0, 0, 0,0.15);
 }
  
-.header-nav__div--trangchu a ,.header-nav__div--camera a,.header-nav__div--camera-accessory a, .header-nav__div--laptop a,.header-nav__div--laptop-accessory a{
+.menu-bar i,.header-nav__div--trangchu a ,.header-nav__div--camera a,.header-nav__div--camera-accessory a, .header-nav__div--laptop a,.header-nav__div--laptop-accessory a{
     color: #FFF;
     text-decoration: none;
     font-weight: 600;
     margin: 0 5px;
     font-size: 15px;
+    
 }
 
-.header-nav__div--trangchu:hover ,.header-nav__div--camera:hover ,.header-nav__div--camera-accessory:hover , .header-nav__div--laptop:hover,.header-nav__div--laptop-accessory:hover {
+.menu-bar:hover,.header-nav__div--trangchu:hover ,.header-nav__div--camera:hover ,.header-nav__div--camera-accessory:hover , .header-nav__div--laptop:hover,.header-nav__div--laptop-accessory:hover {
     background-color: gray;
     cursor: pointer;
     color: black;

@@ -1,4 +1,22 @@
-    let index__banner = 1;
+ // header-bar-menu
+    const header_nav = document.querySelector('.header-nav');
+    const mobilebar = document.querySelector('.menu-bar');
+    const heightmenu = header_nav.clientHeight;
+    
+    mobilebar.onclick = () => {
+        let isClose = header_nav.clientHeight === heightmenu;
+        if(isClose){
+            header_nav.style.height = 'auto';
+        }
+        else {
+            header_nav.style.height = null;
+        }
+    }
+ // header-bar-menu
+
+ // banner 
+ 
+ let index__banner = 1;
     const changeImage = () => {
         let imgs = ["./assets/imgs/banner-img/banner--one.png", 
                     "./assets/imgs/banner-img/banner--two.png", 
@@ -27,11 +45,11 @@
     // làm xuất hiện hotdeal hoặc sắp ra mắt
     function showHotdeal(){
         introduce_onebuttom.classList.add('open');
-        introduce_twobuttom.classList.remove("open")
+        introduce_twobuttom.classList.remove("open");
     }
     function showNew(){
         introduce_twobuttom.classList.add('open');
-        introduce_onebuttom.classList.remove("open")
+        introduce_onebuttom.classList.remove("open");
     }
     
     hotdealbutton.addEventListener('click', showHotdeal);
@@ -87,7 +105,9 @@
     function moveSlide_two(step){
         showSlide_two(index__introduce_two + step)
     }
-
+    window.onload = () => {
+        introduce_onebuttom.classList.add('open');
+    }
 
     // trượt của sắp ra mắt
 
