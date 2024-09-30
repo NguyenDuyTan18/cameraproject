@@ -1,16 +1,18 @@
 
 @media (max-width: 480px) {
     .header{
-        width: 77%;
+        width: 100%;
     }
 
     .header-content_img--logo{
         width: 70px;
+        margin-right: 85px;
     }
 
     .header .header-content{
         margin-bottom: 20px;
         margin-top: 20px;
+        justify-content:start;
     }
 
     .header .header-content, .header-content__container,
@@ -19,10 +21,10 @@
     }
 
     .header-content__container--search{
-        margin-right: 2px;
+        margin-right: 5px;
     }
     .header-icon__i--shopping-cart{
-        margin-left: 2px;
+        margin-left: 7px;
     }
 
     /* header-nav */
@@ -41,7 +43,7 @@
 
     .menu-bar{
         display: inline-block;
-        float: right;
+        /* float: right; */
         border-bottom: 0px;
         padding: 2px 5px;
         line-height: 44px;
@@ -53,9 +55,22 @@
     /* header-nav */
     /* banner */
     .banner{
-        width: 77%;
+        width: 100%;
     }
     /* banner */
+    /* main-introduce */
+    .main{
+        width: 126%;
+    }
+
+    .main-introduce__div--button{
+        width: 77%;
+    }
+    .main-introduce__list--content-one, .main-introduce__list--content-two{
+        height: 260px;
+        left: 13.5%;
+    }
+    /* main-introduce */
 
     /* main-picture */
     .main-picture__list--one, .main-picture__list--two{
@@ -67,7 +82,31 @@
         height: 50%;
         width: 45%;
     }
+    .main-picture__container, .main-img{
+        width: 167%;
+    }
     /* main-picture */
+
+    /* main__list--sub-content */
+
+    .main__list--sub-content{
+        width: 78%;
+    }
+    /* main__list--sub-content */
+
+    .footer-information {
+        display: block;
+        text-align: center;
+    }
+
+
+    .footer-information__div--category .img-bocongthuong {
+        width: 50%;
+        margin-top: 20px;
+    }
+    .footer-information__div--social a .img-pay{
+        margin-left: 17%;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 789px) {

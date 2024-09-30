@@ -46,10 +46,15 @@
     function showHotdeal(){
         introduce_onebuttom.classList.add('open');
         introduce_twobuttom.classList.remove("open");
+        hotdealbutton.classList.add('border-js');
+        newbutton.classList.remove('border-js');
     }
     function showNew(){
         introduce_twobuttom.classList.add('open');
         introduce_onebuttom.classList.remove("open");
+        hotdealbutton.classList.remove('border-js');
+        newbutton.classList.add('border-js');
+
     }
     
     hotdealbutton.addEventListener('click', showHotdeal);
@@ -57,10 +62,10 @@
     
     // làm xuất hiện hotdeal hoặc sắp ra mắt
     // trượt của hotdeal
-    let index__introduce = 0;
-    
-    function showSlide(index){
-        const totalcontainer = container.children.length;
+    let index__introduce = 0;  // set index = 0
+    // hàm chiếu slide
+    function showSlide(index){ 
+        const totalcontainer = container.children.length; // tìm số lenght của bự css
         console.log(totalcontainer)
         if(index >= totalcontainer  ){
             index__introduce = 0;
@@ -72,13 +77,18 @@
             index__introduce = index;
         }
         console.log(index__introduce)
-        const containerWidth = container.children[0].clientWidth
+        const containerWidth = container.children[0].clientWidth // lấy thẻ chiều rộng của thẻ cha
         console.log(containerWidth);
-        container.style.transform = `translateX(${- index__introduce * containerWidth}px)`;
+        container.style.transform = `translateX(${- index__introduce * containerWidth}px)`; // dịch chuyển qua n px
     }
     function moveSlide(step){
-        showSlide(index__introduce + step)
+        showSlide(index__introduce + step) // khi click mới nhảy
     }
+
+    setInterval( ()=>{
+        index__introduce++;
+        showSlide(index__introduce); // sau 5s sẽ nhảy
+    }, 5000)
     // trượt của hotdeal
 
 
@@ -105,12 +115,17 @@
     function moveSlide_two(step){
         showSlide_two(index__introduce_two + step)
     }
+    
+    setInterval( ()=>{
+        index__introduce_two++;
+        showSlide_two(index__introduce_two);
+    }, 5000)
+    // trượt của sắp ra mắt
+    
     window.onload = () => {
         introduce_onebuttom.classList.add('open');
+        hotdealbutton.classList.add('border-js');
     }
-
-    // trượt của sắp ra mắt
-
 
     // main--introduce
     // main
