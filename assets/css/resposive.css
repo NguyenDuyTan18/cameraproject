@@ -1,7 +1,11 @@
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .header{
         width: 100%;
+    }
+
+    .header-content--time{
+        display: none;
     }
 
     .header-content_img--logo{
@@ -86,14 +90,23 @@
         width: 167%;
     }
     /* main-picture */
+    .main__list--products {
+        width: 66%;
+    }
 
+    .main-product-one ,.main-product-two, .main-product-three, .main-product-four, .main-product-five, .main-product-six {
+        display: block;
+        margin-bottom: 10px;
+    }
     /* main__list--sub-content */
 
     .main__list--sub-content{
         width: 78%;
     }
     /* main__list--sub-content */
-
+    .footer{
+        width: 100%;
+    }
     .footer-information {
         display: block;
         text-align: center;
@@ -106,6 +119,14 @@
     }
     .footer-information__div--social a .img-pay{
         margin-left: 17%;
+    }
+
+    .main-content--from {
+        display: block;
+    }
+
+    .main-content--sub-email{
+        margin-top: 10px;
     }
 }
 

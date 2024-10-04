@@ -1,4 +1,24 @@
- // header-bar-menu
+// set time
+    const headerTime = document.querySelector('.header-content--time')
+    setInterval(()=>{
+        let objTime = new Date();
+        let timehour= objTime.getHours();
+        let timeminute = objTime.getMinutes();
+        let timesecond = objTime.getSeconds();
+        let check;
+        if(timehour < 10) timehour = `0${timehour}`
+        if(timeminute < 10) timeminute = `0${timeminute}`
+        if(timesecond < 10) timesecond = `0${timesecond}`
+        if(timehour > 12) check = `PM <i class="fa-solid fa-moon"></i>`
+        else check = `AM <i class="fa-solid fa-sun"></i>`
+        let time = `<div>${timehour}:${timeminute}:${timesecond} ${check}</div>`
+        console.log(time)
+        headerTime.innerHTML = time;
+    }, 1000)
+// set time
+
+
+// header-bar-menu
     const header_nav = document.querySelector('.header-nav');
     const mobilebar = document.querySelector('.menu-bar');
     const heightmenu = header_nav.clientHeight;
@@ -126,10 +146,17 @@
         introduce_onebuttom.classList.add('open');
         hotdealbutton.classList.add('border-js');
     }
-
+    
+    
     // main--introduce
     // main
-
+    
+    // footer
+    const likebutton = document.querySelector('.icon-like');
+    let likeText = Math.floor(Math.random() * (1000 - 10) + 10);
+    console.log(likeText)
+    likebutton.innerHTML = `<i class="fa-regular fa-thumbs-up"></i> ${likeText}K`
+    // footer
     
 
     
