@@ -17,6 +17,21 @@
     }, 1000)
 // set time
 
+// set add-cart
+    const addButtons = document.querySelectorAll('.add-button');
+    const cartButton = document.querySelector('.cart-button')
+
+    for(let i = 0 ; i < addButtons.length; i++){
+        let addButton = addButtons[i];
+    
+        addButton.onclick = () => {
+            let numberCart = cartButton.textContent;
+            numberCart++;
+            cartButton.innerHTML = numberCart;
+        }
+    }
+
+// set add-cart
 
 // header-bar-menu
     const header_nav = document.querySelector('.header-nav');
@@ -32,7 +47,7 @@
             header_nav.style.height = null;
         }
     }
- // header-bar-menu
+ // header-bar-menu responsive
 
  // banner 
  
@@ -82,10 +97,9 @@
     
     // làm xuất hiện hotdeal hoặc sắp ra mắt
     // trượt của hotdeal
-    let index__introduce = 0;  // set index = 0
-    // hàm chiếu slide
+    let index__introduce = 0;  
     function showSlide(index){ 
-        const totalcontainer = container.children.length; // tìm số lenght của bự css
+        const totalcontainer = container.children.length; 
         console.log(totalcontainer)
         if(index >= totalcontainer  ){
             index__introduce = 0;
@@ -97,17 +111,17 @@
             index__introduce = index;
         }
         console.log(index__introduce)
-        const containerWidth = container.children[0].clientWidth // lấy thẻ chiều rộng của thẻ cha
+        const containerWidth = container.children[0].clientWidth 
         console.log(containerWidth);
-        container.style.transform = `translateX(${- index__introduce * containerWidth}px)`; // dịch chuyển qua n px
+        container.style.transform = `translateX(${- index__introduce * containerWidth}px)`; 
     }
     function moveSlide(step){
-        showSlide(index__introduce + step) // khi click mới nhảy
+        showSlide(index__introduce + step) 
     }
 
     setInterval( ()=>{
         index__introduce++;
-        showSlide(index__introduce); // sau 5s sẽ nhảy
+        showSlide(index__introduce); 
     }, 5000)
     // trượt của hotdeal
 
@@ -146,17 +160,45 @@
         introduce_onebuttom.classList.add('open');
         hotdealbutton.classList.add('border-js');
     }
-    
-    
     // main--introduce
-    // main
+
+    // main--email
+    const emailButton = document.querySelector('.main-content--sub-email');
+    let colorEmail ;
+    setInterval(()=>{
+        setTimeout(()=>{
+            colorEmail = '#ffffff'
+            emailButton.style.color= colorEmail;
+        }, 500)
+
+        setTimeout(()=>{
+            colorEmail = '#000000'
+            emailButton.style.color= colorEmail;
+        }, 1000)
+        
+        setTimeout(() => {
+            colorEmail = '#FFFF00'
+            emailButton.style.color = colorEmail
+        }, 2000)
+
+
+        setTimeout(() => {
+            colorEmail = '#00FF00'
+            emailButton.style.color = colorEmail
+        }, 4000)
+    }, 3000)
+
+
+    // main--email
+
+// main
     
-    // footer
+// footer
     const likebutton = document.querySelector('.icon-like');
     let likeText = Math.floor(Math.random() * (1000 - 10) + 10);
     console.log(likeText)
     likebutton.innerHTML = `<i class="fa-regular fa-thumbs-up"></i> ${likeText}K`
-    // footer
+// footer
     
 
     
