@@ -6,12 +6,17 @@
     <script src="https://kit.fontawesome.com/7765121905.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./assets/css/resposive.css">
     <link rel="icon" href="./assets/imgs/header-img/header-logo.png">
     <title>DriverShop</title>
 </head>
 <body>
-    <div class="root ">
+    <div class="root overflow">
         <div class="header">
             <div class="header-content">
                 <img src="./assets/imgs/header-img/header-logo1.png" alt="Logo-shop" class="header-content_img--logo">
@@ -88,71 +93,61 @@
                     </div>
                 </div>
 
+                <h2>Máy ảnh & phụ kiện</h2>
                 <div class="main__list--products">
-                    <h2>Máy ảnh</h2>
-                    <div class="main-products__container">
-                        <div class="main-products__list--one">
-                            <div class="main-product-one">
-                                <img src="./assets/imgs/main-img/main-products--pic/picture1.jpg" alt="">
-                                <div class="mai-product--content">
-                                    <p>Canon EOS R8</p>
-                                    <p><strong>29,490,000đ</strong></p>
-                                    <button class="add-button" type="button">ADD</button>
-                                </div>
-                            </div>
-                            <div class="main-product-two">
-                                <img src="./assets/imgs/main-img/main-products--pic/picture2.jpg" alt="">
-                                <div class="mai-product--content">
-                                    <p>Sony ZV-E10</p>
-                                    <p><strong>18,990,000đ</strong></p>
-                                    <button class="add-button" type="button">ADD</button>
-                                </div>
-
-                            </div>
-
-                            <div class="main-product-three">
-                                <img src="./assets/imgs/main-img/main-products--pic/picture3.jpg" alt="">
-                                <div class="mai-product--content">
-                                    <p>Sony Alpha a7 IV</p>
-                                    <p><strong>51,490,000đ</strong></p>
-                                    <button class="add-button" type="button">ADD</button>
-                                </div>
-
-                            </div>
+                    <div class="main__list--item">
+                        <img src="./assets/imgs/main-img/main-products--pic/picture1.jpg" alt="">
+                        <div class="main-product--content">
+                            <p>Canon EOS R8</p>
+                            <p><strong>29,490,000đ</strong></p> 
                         </div>
+                    </div>
 
-                        <div class="main-products__list--two">
-                            <div class="main-product-four">
-                                <img src="./assets/imgs/main-img/main-products--pic/picture4.jpg" alt="">
-                                <div class="mai-product--content">
-                                    <p>Nikon D780 (Body) (Chính hãng VIC)</p>
-                                    <p><strong>35,490,000đ</strong></p>
-                                    <button class="add-button" type="button">ADD</button>
-                                </div>
+                    <div class="main__list--item">
+                        <img src="./assets/imgs/main-img/main-products--pic/picture2.jpg" alt="">
+                            <div class="main-product--content">
+                                <p>Sony ZV-E10</p>
+                                <p><strong>18,990,000đ</strong></p>
                             </div>
-                            <div class="main-product-five">
-                                <img src="./assets/imgs/main-img/main-products--pic/picture5.jpg" alt="">
-                                <div class="mai-product--content">
-                                    <p>Canon EOS R3 + RF 50mm f/1.8 STM</p>
-                                    <p><strong>58,990,000đ</strong></p>
-                                    <button class="add-button" type="button">ADD</button>
-                                </div>
+                    </div>
 
+
+                    <div class="main__list--item">
+                        <img src="./assets/imgs/main-img/main-products--pic/picture3.jpg" alt="">
+                            <div class="main-product--content">
+                                <p>Sony Alpha a7 IV</p>
+                                <p><strong>51,490,000đ</strong></p>
                             </div>
+                    </div>
 
-                            <div class="main-product-six">
-                                <img src="./assets/imgs/main-img/main-products--pic/picture3.jpg" alt="">
-                                <div class="mai-product--content">
-                                    <p>Sony ZV-1 II Vlog On The Go Edition</p>
-                                    <p><strong>20,490,000đ</strong></p>
-                                    <button class="add-button" type="button">ADD</button>
-                                </div>
 
+                    <div class="main__list--item">
+                        <img src="./assets/imgs/main-img/main-products--pic/picture4.jpg" alt="">
+                            <div class="main-product--content">
+                                <p>Đèn LED video Godox SL300 III</p>
+                                <p><strong>8,490,000đ</strong></p>
+                                
                             </div>
+                    </div>
+
+
+                    <div class="main__list--item">
+                        <img src="./assets/imgs/main-img/main-products--pic/picture5.jpg" alt="">
+                            <div class="main-product--content">
+                                <p>Đèn flash Ulanzi F12 Mini Camera </p>
+                                <p><strong>2,000,000đ</strong></p>
+                                
+                            </div>
+                    </div>
+
+
+                    <div class="main__list--item">
+                        <img src="./assets/imgs/main-img/main-products--pic/picture6.jpg" alt="">
+                        <div class="main-product--content">
+                            <p>Đèn LED Godox Litemons LA300R RGB</p>
+                            <p><strong>10,490,000đ</strong></p>
+                            
                         </div>
-
-
-
                     </div>
                 </div>
                     
@@ -261,10 +256,41 @@
                     <div id="footer__div--one">Trả Góp Online</div>
                     <a href="https://bill.payoo.vn/"><img src="./assets/imgs/footer-img/footer-pay.png" alt="anh thanh toan" class="img-pay"></a>
                 </div>
-            </div>
 
+            </div>
+            
+            <div class="icon-thank">
+                <i class="fa-solid fa-gift icon-thank-button"></i>
+            </div>
         </footer>
+        
+        
+        <div class="modal-thank">
+            <div class="modal-thank__container">
+                <button class="close-thank-button"><i class="fa-regular fa-rectangle-xmark"></i></button>
+                <div class="modal-thank--content">
+                    <img src="./assets/imgs/header-img/header-logo.png" alt="">
+                    <div class="modal-thank-subcontent">
+                        <p>Cảm ơn quý khách đã ghé thăm DriverShop!</p>
+                        <p>Chúng tôi rất vui mừng được phục vụ quý khách và hy vọng rằng quý khách đã tìm thấy những sản phẩm camera phù hợp với nhu cầu của mình. Sự hài lòng của quý khách là niềm vinh hạnh lớn nhất của chúng tôi. Nếu có bất kỳ câu hỏi hay cần hỗ trợ thêm, xin đừng ngần ngại liên hệ với chúng tôi. Chúc quý khách một ngày tốt lành và mong sớm được gặp lại quý khách!</p>
+                        <p>Trân trọng, Đội ngũ DriverShop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="home.js"></script>
 </body>
 

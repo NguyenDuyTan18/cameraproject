@@ -164,6 +164,7 @@
 
     // main--email
     const emailButton = document.querySelector('.main-content--sub-email');
+    const h2Button = document.querySelector('.main h2')
     let colorEmail ;
     setInterval(()=>{
         setTimeout(()=>{
@@ -174,17 +175,20 @@
         setTimeout(()=>{
             colorEmail = '#000000'
             emailButton.style.color= colorEmail;
+            h2Button.style.color = 'red'
         }, 1000)
         
         setTimeout(() => {
             colorEmail = '#FFFF00'
             emailButton.style.color = colorEmail
+            h2Button.style.color = colorEmail
         }, 2000)
 
 
         setTimeout(() => {
             colorEmail = '#00FF00'
             emailButton.style.color = colorEmail
+            h2Button.style.color = colorEmail
         }, 4000)
     }, 3000)
 
@@ -201,4 +205,55 @@
 // footer
     
 
-    
+//modal
+    const thankButton = document.querySelector('.icon-thank-button');
+    const closeThankButton = document.querySelector('.close-thank-button');
+    const modalButton = document.querySelector('.modal-thank');
+
+    function showModal() {
+        modalButton.classList.add('openflex')
+    }
+
+    function closeModal(){
+        modalButton.classList.remove('openflex');
+    }
+    thankButton.addEventListener('click',showModal);
+    closeThankButton.addEventListener('click', closeModal);
+//modal
+
+
+$(document).ready(function(){
+    $('.main__list--products').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+        ]
+         
+      });
+  });
