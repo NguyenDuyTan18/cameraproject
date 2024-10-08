@@ -227,7 +227,7 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 1000,
         responsive: [
             {

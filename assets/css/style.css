@@ -1,21 +1,15 @@
 *{
-    font-family:'Times New Roman', Times, serif;
+  font-family: "Montserrat", sans-serif;
+  
+
 }
 
-.overflow{
+
+
+.root{
+    
     overflow:hidden;
 }
-
-/* .root{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    'header header '
-    'banner banner '
-    'main main'
-    'footer footer';
-} */
 .header{
     grid-area: header;
     position: relative;
